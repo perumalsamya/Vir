@@ -1,0 +1,6 @@
+D:\Personal\Vir\WCF.Service\WCF.Service.SelfHostingLib\bin\Debug\WCF.Service.SelfHostingLib.dll.config
+D:\Personal\Vir\WCF.Service\WCF.Service.SelfHostingLib\bin\Debug\WCF.Service.SelfHostingLib.dll
+D:\Personal\Vir\WCF.Service\WCF.Service.SelfHostingLib\bin\Debug\WCF.Service.SelfHostingLib.pdb
+D:\Personal\Vir\WCF.Service\WCF.Service.SelfHostingLib\obj\Debug\WCF.Service.SelfHostingLib.csprojResolveAssemblyReference.cache
+D:\Personal\Vir\WCF.Service\WCF.Service.SelfHostingLib\obj\Debug\WCF.Service.SelfHostingLib.dll
+D:\Personal\Vir\WCF.Service\WCF.Service.SelfHostingLib\obj\Debug\WCF.Service.SelfHostingLib.pdb
