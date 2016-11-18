@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.Service", "WCF.Service\WCF.Service.csproj", "{12F8C0D1-97FE-4FC5-BED9-B02DFA78A383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.WebFormsApp", "WCF.WebFormsApp\WCF.WebFormsApp.csproj", "{0F1A8324-C388-49D1-B460-BC5C44CB7947}"
+	ProjectSection(ProjectDependencies) = postProject
+		{12F8C0D1-97FE-4FC5-BED9-B02DFA78A383} = {12F8C0D1-97FE-4FC5-BED9-B02DFA78A383}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12F8C0D1-97FE-4FC5-BED9-B02DFA78A383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F8C0D1-97FE-4FC5-BED9-B02DFA78A383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F8C0D1-97FE-4FC5-BED9-B02DFA78A383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F8C0D1-97FE-4FC5-BED9-B02DFA78A383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1A8324-C388-49D1-B460-BC5C44CB7947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1A8324-C388-49D1-B460-BC5C44CB7947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1A8324-C388-49D1-B460-BC5C44CB7947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1A8324-C388-49D1-B460-BC5C44CB7947}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
