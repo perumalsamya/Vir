@@ -13,10 +13,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.Service.SelfHostingLib", "WCF.Service.SelfHostingLib\WCF.Service.SelfHostingLib.csproj", "{F3DB4FA7-6E50-4A08-AC76-98D2DBF5255B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.SelfHost.Console", "WCF.SelfHost.Console\WCF.SelfHost.Console.csproj", "{6E04AA3E-7B85-4927-89F8-7BC3A14653DE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F3DB4FA7-6E50-4A08-AC76-98D2DBF5255B} = {F3DB4FA7-6E50-4A08-AC76-98D2DBF5255B}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCFSelfHost", "WCFSelfHost", "{8761355B-E50A-47C6-9124-55BA896B3501}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IIS", "IIS", "{ECD7A08F-2FA6-41F4-98B5-7354881CB4C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{425AD409-8619-4017-9148-6012569FDDAE}"
+	ProjectSection(SolutionItems) = preProject
+		Database-Schema.sql = Database-Schema.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

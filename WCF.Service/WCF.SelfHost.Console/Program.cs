@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WCF.Service.SelfHostingLib;
+using WCF.SelfHost.ConsoleClient.ServiceReference1;
 
 namespace WCF.SelfHost
 {
@@ -11,15 +11,34 @@ namespace WCF.SelfHost
     {
         static void Main(string[] args)
         {
-            CustomerService service = new CustomerService();
-
-            var customerList = service.GetByKey("0 OR 1=1");
-
-            foreach (var item in customerList)
+            using (CustomerServiceClient client = new CustomerServiceClient("wsHttpBinding"))
             {
-                Console.WriteLine(item.NAME);
+                Console.WriteLine("WSHttpBinding Started");
+
+                var list = client.GetByKey("0 OR 1=1");
+
+                foreach (var item in list)
+                {
+                    Console.WriteLine(item.NAME);
+                }
+
+                Console.WriteLine("WSHttpBinding Ended");
+
             }
 
+            using (CustomerServiceClient client = new CustomerServiceClient("netNamedPipeBinding"))
+            {
+                Console.WriteLine("NetNamedPipeBinding Started");
+
+                var list = client.GetByKey("0 OR 1=1");
+
+                foreach (var item in list)
+                {
+                    Console.WriteLine(item.NAME);
+                }
+
+                Console.WriteLine("NetNamedPipeBinding Ended");
+            }
             Console.ReadLine();
         }
     }
